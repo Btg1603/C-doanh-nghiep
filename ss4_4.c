@@ -15,7 +15,12 @@ int main(){
 	case 2:
 	if (nam%400==0||nam%4==0&&nam%10!=0)
 	printf("thang %d co 29 ngay ",n);
-	else ("thang %d co 28 ngay ",n); 
-	break; 
+	else 
+	printf("thang %d co 28 ngay ",n); 
+	break;
+	default:
+	printf("Thang %d khong hop le\n", n); 
+	break;	
 }
+	return 0;
 }
