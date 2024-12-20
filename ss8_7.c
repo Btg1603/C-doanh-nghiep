@@ -16,13 +16,8 @@ int main() {
     }
     int temp=0; 
      for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++){			 
-            if (i==j){
-            		printf("%d ", matrix[i][j]);
-            	temp+=matrix[i][j]; 
-			}else printf("  "); 
-        }
-        printf("\n"); 
+            		printf("%d ", matrix[i][i]);
+            	temp+=matrix[i][i]; 
     }
     
     printf("tong gia tri duong cheo chinh la %d",temp);
