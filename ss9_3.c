@@ -12,7 +12,7 @@ int main() {
     scanf("%d", &n);
 
     if (n < 0 || n > MAX_SIZE) {
-        printf("So phan tu không hop le!\n");
+        printf("So phan tu khÃ´ng hop le!\n");
         return 1;
     }
 
@@ -30,10 +30,10 @@ int main() {
 
    
     if (delIndex < 0 || delIndex >= currentLength ) {
-        printf("Vi tri không hop le! Vi tri phai nam trong khoang tu 0 den %d.\n", MAX_SIZE - 1);
+        printf("Vi tri khÃ´ng hop le! Vi tri phai nam trong khoang tu 0 den %d.\n", MAX_SIZE - 1);
     } else {
     	
-            for (int i = currentLength-1; i > delIndex; i++) {
+            for (for (int i = delIndex; i < currentLength; i++)) {
                 arr[i] = arr[i+1];
             }
             currentLength--;
